@@ -66,11 +66,9 @@
             email: {
                 validators: {
                     notEmpty: {
-                        message: 'Please enter your Email Address'
+                        message: 'The email is required and cannot be empty'
                     },
-                    emailAddress: {
-                        message: 'Please enter a valid Email Address'
-                    },
+                    
                     regexp: {
                             regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
                             message: 'The value is not a valid email address'
@@ -79,9 +77,13 @@
             },
             contact_no: {
                 validators: {
+                    notEmpty: {
+                        message: 'The Contact number is required and cannot be empty'
+                    },
                   stringLength: {
                         min: 10, 
                         max: 10,
+                        message: 'Must be 10 digits',
                     notEmpty: {
                         message: 'Please enter your Contact No.'
                      }
