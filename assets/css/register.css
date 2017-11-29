@@ -17,7 +17,12 @@
 .title {
 	margin: 10% 0;
 }
-
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .well {
+    	padding: 0;
+    }
+}
 body {
     background-color: white;
 }
