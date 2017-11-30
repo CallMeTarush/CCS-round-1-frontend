@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
   <link rel="stylesheet" href="assets/css/register.css">
   <script src="assets/js/register.js"></script>
@@ -18,101 +19,59 @@
     <div class="title-container col-md-4 col-md-offset-4">
   
       <div class="img-container">
-        <img src="assets/images/CSI_typefaceDk.png" class="logo">
+        <img src="assets/images/csi_typeface.png" class="logo">
       </div>
       <!-- <div class="title text-center">
         Core Committee Selections
       </div> -->
     </div>
-    <div class="form-container col-md-12 col-sm-12">
-     <form class="well form-horizontal col-sm-12" action=" " method="post"  id="contact_form">
-        <fieldset>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label">First Name</label>  
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-                 </div>
-              </div>
-           </div>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label" >Last Name</label> 
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-                 </div>
-              </div>
-           </div>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label">Registration number</label>  
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input  name="registration_no" placeholder="17BCE0069" class="form-control"  type="text">
-                 </div>
-              </div>
-           </div>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label" >Password</label> 
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="user_password" placeholder="Password" class="form-control"  type="password">
-                 </div>
-              </div>
-           </div>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label" >Confirm Password</label> 
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
-                 </div>
-              </div>
-           </div>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label">E-Mail</label>  
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                 </div>
-              </div>
-           </div>
-           <!-- Text input-->
-           <div class="form-group">
-              <label class="col-md-4 control-label">Contact No.</label>  
-              <div class="col-md-4 inputGroupContainer">
-                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                    <input name="contact_no" placeholder="(+91)" class="form-control" type="text">
-                 </div>
-              </div>
-           </div>
-           <!-- Select Basic -->
-           <!-- Success message -->
-           <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
-           <!-- Button -->
-           <div class="form-group">
-              <label class="col-md-4 control-label"></label>
-              <div class="col-md-4"><br>
-                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-primary" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-              </div>
-           </div>
-        </fieldset>
-     </form>
+    <div class="panel panel-default col-md-6 col-md-offset-3">
+            <div class="panel-heading col-md-12">
+
+                <div class="panel-title text-center">Core Committee Selections</div>
+            </div>     
+
+            <div class="panel-body ">
+
+                <form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST" action="url.php">
+                   
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="name" type="text" class="form-control" name="name" value="" placeholder="Your Name">                                        
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>                                                                  
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="regno" type="text" class="form-control" name="regno" placeholder="17BCE0069">
+                    </div>                                                                  
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="phone" type="text" class="form-control" name="phone" placeholder="(+91)">
+                    </div>                                                                  
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>                                                                  
+
+                    <div class="form-group">
+                        <!-- Button -->
+                        <div class="col-sm-12 controls">
+                          <input type="button" id="signup" class="btn" value="Sign Up!" />                 
+                        </div>
+                    </div>
+
+                </form>     
+
+            </div>                     
+        </div>  
   </div>
-  </div>
-  </div>
-  
 <div id="particles"></div>
 
 <svg id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%" xmlns:xlink="http://www.w3.org/1999/xlink">

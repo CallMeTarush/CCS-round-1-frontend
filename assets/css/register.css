@@ -1,12 +1,58 @@
 #success_message{ display: none;}
 
+.form-group {
+    color: white;
+}
 .well {
 	background-color: transparent; 
 	border: 0;
 }
+.btn {
+    border-style: solid !important;
+    border: 1px;
+    border-color: white;
+    background: #121642;
+    color: white;
+}
+.btn:hover {
+    background: white;
+    color: black;
+}
+#loginbox {
+    margin-top: 30px;
+}
+
+#loginbox > div:first-child {        
+    padding-bottom: 10px;    
+}
+
+.iconmelon {
+    display: block;
+    margin: auto;
+}
+
+#form > div {
+    margin-bottom: 25px;
+}
+
+#form > div:last-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.panel {    
+    background-color: transparent;
+    padding: 0;
+}
+
+.panel-body {
+    margin-top: 10%;
+}
+
 .logo {
 	width: 100%;
 	height: auto;
+    background: #121642;
 }
 .form-container {
 	margin-top: 5%;
@@ -24,7 +70,7 @@
     }
 }
 body {
-    background-color: white;
+    background-color: #121642;
 }
 
 #loginbox {
@@ -60,3 +106,4 @@ body {
     position: absolute;
     z-index: -2;
 }
+#success_message{ display: none;}
