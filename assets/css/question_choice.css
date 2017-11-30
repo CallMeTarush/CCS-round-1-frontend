@@ -88,7 +88,6 @@ html, body {
 .box-tech {
   position: relative;
   display: inline-block;
-
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -109,6 +108,7 @@ html, body {
 }
 
 .rotate {
+  background: white;
 	 transition-duration: .4s, 1s;
   transition-timing-function: linear;
   font-family: Trajan;
@@ -123,6 +123,9 @@ html, body {
 
 
 /* DEMO-SPECIFIC STYLES */
+.typewriter {
+  background: white;
+}
 .typewriter h1 {
   color: #000;
   font-family: monospace;
@@ -169,5 +172,29 @@ a:hover {
 a:active {
     color: black;
 
+}
+
+body {
+ -webkit-animation: bg-animation 30s ease infinite;
+-moz-animation: bg-animation 30s ease infinite;
+animation: bg-animation 30s ease infinite;
+ background: linear-gradient(269deg, #246655, #1b66da, #1ba9da, #37d8d6);
+ background-size: 800% 800%;
+}
+
+@-webkit-keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes bg-animation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
 }
 
