@@ -31,44 +31,6 @@ html, body {
   text-align: center;
   border: 2px solid black;
 }
-.hover7{
-  display: inline-block;
-}
-
-.hover7:hover .hover7__label:after,
-.hover7:focus .hover7__label:after{
-  transform: translate3d(0, 0, 0);
-}
-
-.hover7__label{
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 4px;
-  display: inline-block;
-}
-
-.hover7__label:after{
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  transform: translate3d(-70%, 0, 0);
-  transition: transform .2s ease-in;
-}
-
-.menu__link{
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .box {
   background: #ffffff;
   border-radius: 6px;
@@ -85,40 +47,20 @@ html, body {
   	border-radius: 10%;
 }
 
-.box-tech {
-  position: relative;
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Create the hidden pseudo-element */
-/* include the shadow for the end state */
-
-/* Scale up the box */
-.box-tech:hover {
-  transform: scale(1.2, 1.2);
-}
-
-/* Fade in the pseudo-element with the bigger shadow */
-.box-tech:hover::after {
-  opacity: 1;
-}
-
 .rotate {
   background: white;
-	 transition-duration: .4s, 1s;
+	transition-duration: .4s, 1s;
   transition-timing-function: linear;
   font-family: Trajan;
 }
 
 .rotate:hover
 {
-        -webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
+  color: white;
+  background: -webkit-linear-gradient(left,#121642 , #283aef); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right,#121642, #283aef); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right,#121642, #283aef); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,#121642, #283aef); /* Standard syntax */
 }
 
 
