@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #121642;
 }
 .skip {
   
@@ -73,8 +73,7 @@ body {
   width: 100%;
   height: auto;
   margin: 10% 0;
-
-
+  background: #121642
 }
 .logo-container {
 }

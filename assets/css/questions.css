@@ -30,6 +30,7 @@
 html, body {
   height:100%;
 }
+
 body {
  -webkit-animation: bg-animation 30s ease infinite;
 -moz-animation: bg-animation 30s ease infinite;
