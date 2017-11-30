@@ -1,7 +1,9 @@
 body {
     background-color: #121642;
 }
-
+.skip {
+  color: white;
+}
 .btn {
 
 }
